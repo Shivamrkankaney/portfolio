@@ -1,0 +1,53 @@
+.main{
+    background-image: url(/public/photos/pngtree-colorful-round-abstract-vector-background-image_134620.jpg);
+    background-color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   min-height:  100vh;
+    justify-content: space-around;
+}
+.navbar-items{
+    marginTop: "40px",
+}
+.mainsec{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 15px;
+}
+.hamburger{
+    display: none;
+}
+.about-container{
+    display: flex;
+}
+@media(max-width: 900px){
+    .navbar-items{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size: 80px;
+    }
+    .about-container{
+        display: block;
+    }
+}
+.btn:hover{
+    background-color: rgb(131, 48, 48);
+    color: rgb(143, 55, 55);
+}
+.main2{
+    background-image: url(/public/photos/pngtree-colorful-round-abstract-vector-background-image_134620.jpg);
+    background-color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 125px;
+    justify-content: space-around;
+}
+
+
