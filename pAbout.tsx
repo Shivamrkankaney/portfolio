@@ -90,9 +90,10 @@ export function PAbout() {
               <MyButton
                 className="btn"
               >
+                 <Link to="Resume" style={{ textDecoration: "none" }}>
                 {" "}
                 <DescriptionOutlinedIcon />
-                Resume
+                Resume</Link>
               </MyButton>
               <MyButton
                 className="btn"
