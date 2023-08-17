@@ -17,6 +17,7 @@ import BookOutlinedIcon from "@mui/icons-material/BookOutlined";
 import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
 import img from "../photos/8afa2768fb6ac64c551ae536f86a7a3a.png";
 import img2 from "../photos/_images_about_about.jpg";
+import bimg from "../photos/pngtree-colorful-round-abstract-vector-background-image_134620.jpg"
 
 import "./pstyle.css";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
@@ -30,108 +31,102 @@ import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 import InfoIcon from "@mui/icons-material/Info";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import { Link } from "react-router-dom";
+import styled from "@emotion/styled";
+ const MyButton = styled(Button)({
+  border: "1px solid white",
+                  background: "white",
+                  marginLeft: "10px",
+                  borderRadius: "10px",
+                textAlign:'center',
+
+
+
+ })
+
+
+ const MyTypography = styled(Typography)({
+  marginLeft: "50px", marginTop: "20px"
+
+ })
+ const MTdiv = styled("div")({
+  backgroundImage: `url(${bimg})`,
+  backgroundColor: "antiquewhite",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize:"cover",
+  backgroundAttachment: "fixed",
+  justifyContent: "space-around",
+  height: "125px"
+
+ })
 export function PAbout() {
+
   return (
     <div>
       <header>
-        <div className="main2">
+        <MTdiv className="main2">
           <div className="mainsec">
-            <div style={{ marginTop: "40px", marginLeft: "20px" }}>
+            <div style={{marginLeft: "20px" }}>
               <h1> portfolio</h1>
             </div>
-            <div className="hamburger">==</div>
-            <div style={{ marginTop: "40px", marginLeft: "400px" }}>
-              <Button
+
+            <div style={{ marginTop: "20px",float:"right" }} className="Dbtn">
+              <MyButton
                 className="btn"
-                style={{
-                  border: "1px solid white",
-                  marginLeft: "10px",
-                  borderRadius: "10px",
-                  background: "white",
-                }}
               >
                 {" "}
                 <Link to="Home" style={{ textDecoration: "none" }}>
                   <RoofingIcon />
                   Home
                 </Link>{" "}
-              </Button>
-              <Button
+              </MyButton>
+              <MyButton
                 className="btn"
-                style={{
-                  border: "1px solid white",
-                  background: "white",
-                  marginLeft: "10px",
-                  borderRadius: "10px",
-                }}
               >
                 {" "}
                 <PersonPinCircleRoundedIcon />
                 About
-              </Button>
-              <Button
+              </MyButton>
+              <MyButton
                 className="btn"
-                style={{
-                  border: "1px solid white",
-                  background: "white",
-                  marginLeft: "10px",
-                  borderRadius: "10px",
-                }}
               >
                 {" "}
                 <DescriptionOutlinedIcon />
                 Resume
-              </Button>
-              <Button
+              </MyButton>
+              <MyButton
                 className="btn"
-                style={{
-                  border: "1px solid white",
-                  background: "white",
-                  marginLeft: "10px",
-                  borderRadius: "10px",
-                }}
               >
                 {" "}
                 <HomeRepairServiceOutlinedIcon />
                 Works
-              </Button>
-              <Button
+              </MyButton>
+              <MyButton
                 className="btn"
-                style={{
-                  border: "1px solid white",
-                  background: "white",
-                  marginLeft: "10px",
-                  borderRadius: "10px",
-                }}
               >
                 <BookOutlinedIcon />
                 Blogs
-              </Button>
-              <Button
+              </MyButton>
+              <MyButton
                 className="btn"
-                style={{
-                  border: "1px solid white",
-                  background: "white",
-                  marginLeft: "10px",
-                  borderRadius: "10px",
-                }}
               >
                 {" "}
                 <ContactPhoneOutlinedIcon />
                 Contact
-              </Button>
+              </MyButton>
             </div>
+            <div className="hamburger2">==</div>
           </div>
-        </div>
+        </MTdiv>
       </header>
       <div>
         <div style={{ height: "150px" }}>
-          <Typography
+          <MyTypography
             variant="h4"
-            style={{ marginLeft: "50px", marginTop: "20px" }}
+
           >
             <b>About Me</b> <img src={img} width="200px" />
-          </Typography>
+          </MyTypography>
         </div>
         <div className="about-container">
           <div>

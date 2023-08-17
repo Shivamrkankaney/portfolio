@@ -13,36 +13,60 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import DownloadingSharpIcon from "@mui/icons-material/DownloadingSharp";
 import { BrowserRouter, Link } from "react-router-dom";
+import styled from "@emotion/styled";
+import bimg from "../photos/pngtree-colorful-round-abstract-vector-background-image_134620.jpg"
+
+const MyButton = styled(Button)({
+  border: "1px solid white",
+                  background: "white",
+                  marginLeft: "10px",
+                  borderRadius: "10px",
+
+ })
+ const DButton = styled(Button)({
+  border: "1px solid white",
+              borderRadius: "10px",
+              backgroundColor: " rgb(143, 55, 55)",
+              color: "white",
+
+ })
+ const Mdiv = styled("div")({
+  backgroundImage: `url(${bimg})`,
+  backgroundColor: "antiquewhite",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  backgroundSize:"cover",
+  backgroundAttachment: "fixed",
+ minHeight:  "100vh",
+  justifyContent: "space-around",
+ })
+ const Msdiv = styled("div")({
+  display: "flex",
+justifyContent: "space-between",
+alignItems: "center",
+paddingTop: "15px",
+
+ })
 export function Protfolio() {
   return (
-    <div className="main">
-      <div className="mainsec">
+    <Mdiv className="main">
+      <Msdiv className="mainsec">
         <div>
           <h1> portfolio</h1>
         </div>
         <div className="hamburger">==</div>
         <div className="navbar-items">
-          <Button
+          <MyButton
             className="btn"
-            style={{
-              border: "1px solid white",
-              marginLeft: "10px",
-              borderRadius: "10px",
-              background: "white",
-            }}
+
           >
             {" "}
             <RoofingIcon />
             Home
-          </Button>
-          <Button
+          </MyButton>
+          <MyButton
             className="btn"
-            style={{
-              border: "1px solid white",
-              background: "white",
-              marginLeft: "10px",
-              borderRadius: "10px",
-            }}
+
           >
             {" "}
             <Link to="About" style={{ textDecoration: "none" }}>
@@ -50,60 +74,40 @@ export function Protfolio() {
               <PersonPinCircleRoundedIcon />
               About
             </Link>
-          </Button>
-          <Button
+          </MyButton>
+          <MyButton
             className="btn"
-            style={{
-              border: "1px solid white",
-              background: "white",
-              marginLeft: "10px",
-              borderRadius: "10px",
-            }}
+
           >
             {" "}
             <DescriptionOutlinedIcon />
             Resume
-          </Button>
-          <Button
+          </MyButton>
+          <MyButton
             className="btn"
-            style={{
-              border: "1px solid white",
-              background: "white",
-              marginLeft: "10px",
-              borderRadius: "10px",
-            }}
+
           >
             {" "}
             <HomeRepairServiceOutlinedIcon />
             Works
-          </Button>
-          <Button
+          </MyButton>
+          <MyButton
             className="btn"
-            style={{
-              border: "1px solid white",
-              background: "white",
-              marginLeft: "10px",
-              borderRadius: "10px",
-            }}
+
           >
             <BookOutlinedIcon />
             Blogs
-          </Button>
-          <Button
+          </MyButton>
+          <MyButton
             className="btn"
-            style={{
-              border: "1px solid white",
-              background: "white",
-              marginLeft: "10px",
-              borderRadius: "10px",
-            }}
+
           >
             {" "}
             <ContactPhoneOutlinedIcon />
             Contact
-          </Button>
+          </MyButton>
         </div>
-      </div>
+      </Msdiv>
 
       <center>
         <div style={{ marginTop: "10px" }}>
@@ -121,21 +125,16 @@ export function Protfolio() {
             <InstagramIcon />
           </Button>{" "}
           <br />
-          <Button
-            style={{
-              border: "1px solid white",
-              borderRadius: "10px",
-              backgroundColor: " rgb(143, 55, 55)",
-              color: "white",
-            }}
+          <DButton
+
           >
             <h4>
               Download
               <DownloadingSharpIcon />
             </h4>
-          </Button>
+          </DButton>
         </div>
       </center>
-    </div>
+    </Mdiv>
   );
 }
