@@ -1,22 +1,22 @@
-import { Typography, Button,Icon} from "@mui/material";
+import {  Button,Icon} from "@mui/material";
 import "./pstyle.css";
-import RoofingIcon from "@mui/icons-material/Roofing";
-import PersonPinCircleRoundedIcon from "@mui/icons-material/PersonPinCircleRounded";
-import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
-import BookOutlinedIcon from "@mui/icons-material/BookOutlined";
-import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
-import imgs from "../photos/_images_about_avatar.jpg";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import DownloadingSharpIcon from "@mui/icons-material/DownloadingSharp";
-import { BrowserRouter, Link } from "react-router-dom";
+import {
+  Roofing as RoofingIcon,
+  PersonPinCircleRounded as PersonPinCircleRoundedIcon,
+  DescriptionOutlined as DescriptionOutlinedIcon,
+  HomeRepairServiceOutlined as HomeRepairServiceOutlinedIcon,
+  BookOutlined as BookOutlinedIcon,
+  ContactPhoneOutlined as ContactPhoneOutlinedIcon,
+  FacebookOutlined as FacebookOutlinedIcon,
+  Twitter as TwitterIcon,
+  LinkedIn as LinkedInIcon,
+  Instagram as InstagramIcon,
+  DownloadingSharp as DownloadingSharpIcon,
+} from "@mui/icons-material";
+import {  Link } from "react-router-dom";
 import styled from "@emotion/styled";
 import bimg from "../photos/pngtree-colorful-round-abstract-vector-background-image_134620.jpg"
-import { useState } from "react";
-import { Padding } from "@mui/icons-material";
+import imgs from "../photos/_images_about_avatar.jpg";
 
 const MyButton = styled(Button)({
   border: "1px solid white",
@@ -25,7 +25,6 @@ const MyButton = styled(Button)({
                   borderRadius: "5px",
                   padding:"10px,20px",
                   color:"blue"
-
  })
  const DButton = styled(Button)({
   border: "1px solid white",
@@ -35,11 +34,7 @@ const MyButton = styled(Button)({
               marginTop:'30px',
  height:'55px',
  justifyItems:'center',
-
-              fontSize:"18px"
-
-
-
+         fontSize:"18px"
  })
 
  const ILink= styled(Link)({
@@ -48,7 +43,8 @@ const MyButton = styled(Button)({
   marginLeft:'10px',
   padding:'8px',
   paddingBottom:'13px',
-
+ })
+ const Para= styled("p")({paddingLeft:'18px', paddingBottom:'0px', paddingTop:'15px',paddingRight:'18px',
 
  })
 
@@ -102,13 +98,10 @@ export function Protfolio() {
            key={index}>
             <span style={{paddingRight:'6px' , paddingLeft:'6px'}}> {menuItem.icon} </span>
             <span style={{paddingRight:'10px'}}>{menuItem.label}</span>
-
-
           </MyButton>
           </Link>
         );
       })}
-
 
         </div>
       </Msdiv>
@@ -125,10 +118,10 @@ export function Protfolio() {
             style={{color:menuItem.color , backgroundColor:'white'}}>{menuItem.label}</ILink> )
           }
          </div>
-          <DButton>
+          <DButton className="Dbtn">
 
-             <p  style={{paddingLeft:'18px', paddingBottom:'0px', paddingTop:'15px',paddingRight:'18px',}}>
-              <DownloadingSharpIcon /> Download CV</p>
+             <Para >
+              <DownloadingSharpIcon /> Download CV</Para>
 
           </DButton>
         </div>

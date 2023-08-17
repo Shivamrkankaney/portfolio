@@ -43,6 +43,9 @@
     background-color: rgb(227, 110, 149)!important;
     color: #f3f6f6!important;
 }
+.Dbtn:hover{
+    background-color: rgb(227, 110, 149) !important;
+}
 
 
 
