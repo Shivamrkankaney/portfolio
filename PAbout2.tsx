@@ -1,4 +1,4 @@
-import {  Button} from "@mui/material";
+import {  Button , Link} from "@mui/material";
 import "./pstyle.css";
 import {
   Roofing as RoofingIcon,
@@ -9,10 +9,10 @@ import {
   ContactPhoneOutlined as ContactPhoneOutlinedIcon,
 
 } from "@mui/icons-material";
-import {  Link } from "react-router-dom";
+
 import styled from "@emotion/styled";
 import bimg from "../photos/pngtree-colorful-round-abstract-vector-background-image_134620.jpg"
-import { PHometext } from "./PHometext";
+
 
 const MyButton = styled(Button)({
   border: "1px solid white",
@@ -34,7 +34,7 @@ const MyButton = styled(Button)({
   backgroundRepeat: "no-repeat",
   backgroundSize:"cover",
   backgroundAttachment: "fixed",
- minHeight:  "100vh",
+ height:'125px',
   justifyContent: "space-around",
  })
  const Msdiv = styled("div")({
@@ -54,7 +54,7 @@ paddingTop: "15px",
 ];
 
 
-export function Protfolio() {
+export function Protfolio2() {
 
   return (
     <Mdiv className="main">
@@ -68,7 +68,7 @@ export function Protfolio() {
 
         {menuItems.map((menuItem:any, index:any) => {
         return (
-          <Link to={`/${menuItem.label}`}>
+          <Link href={`/${menuItem.label}`}>
           <MyButton className="btn"
            key={index}>
             <span style={{paddingRight:'6px' , paddingLeft:'6px'}}> {menuItem.icon} </span>
@@ -81,9 +81,7 @@ export function Protfolio() {
         </div>
       </Msdiv>
 
- <section>
-  <PHometext/>
- </section>
+
     </Mdiv>
   );
 }

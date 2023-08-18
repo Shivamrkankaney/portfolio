@@ -47,6 +47,8 @@
     background-color: rgb(227, 110, 149) !important;
 }
 
-
+.grid:hover{
+    transform: scale(1.1);
+}
 
 

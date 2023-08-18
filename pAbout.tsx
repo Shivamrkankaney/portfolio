@@ -4,17 +4,12 @@ import {
   Grid,
   Card,
   CardContent,
-  CardMedia,
+
   CardActionArea,
-  CardActions,
+
 } from "@mui/material";
 import * as React from "react";
-import RoofingIcon from "@mui/icons-material/Roofing";
-import PersonPinCircleRoundedIcon from "@mui/icons-material/PersonPinCircleRounded";
-import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-import HomeRepairServiceOutlinedIcon from "@mui/icons-material/HomeRepairServiceOutlined";
-import BookOutlinedIcon from "@mui/icons-material/BookOutlined";
-import ContactPhoneOutlinedIcon from "@mui/icons-material/ContactPhoneOutlined";
+
 import img from "../photos/8afa2768fb6ac64c551ae536f86a7a3a.png";
 import img2 from "../photos/_images_about_about.jpg";
 import bimg from "../photos/pngtree-colorful-round-abstract-vector-background-image_134620.jpg"
@@ -32,93 +27,23 @@ import InfoIcon from "@mui/icons-material/Info";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import { Link } from "react-router-dom";
 import styled from "@emotion/styled";
- const MyButton = styled(Button)({
-  border: "1px solid white",
-                  background: "white",
-                  marginLeft: "10px",
-                  borderRadius: "10px",
-                textAlign:'center',
-
-
-
- })
+import { Protfolio2 } from "./PAbout2";
 
 
  const MyTypography = styled(Typography)({
   marginLeft: "50px", marginTop: "20px"
 
  })
- const MTdiv = styled("div")({
-  backgroundImage: `url(${bimg})`,
-  backgroundColor: "antiquewhite",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize:"cover",
-  backgroundAttachment: "fixed",
-  justifyContent: "space-around",
-  height: "125px"
 
- })
 export function PAbout() {
 
   return (
     <div>
       <header>
-        <MTdiv className="main2">
-          <div className="mainsec">
-            <div style={{marginLeft: "20px" }}>
-              <h1> portfolio</h1>
-            </div>
 
-            <div style={{ marginTop: "20px",float:"right" }} className="Dbtn">
-              <MyButton
-                className="btn"
-              >
-                {" "}
-                <Link to="Home" style={{ textDecoration: "none" }}>
-                  <RoofingIcon />
-                  Home
-                </Link>{" "}
-              </MyButton>
-              <MyButton
-                className="btn"
-              >
-                {" "}
-                <PersonPinCircleRoundedIcon />
-                About
-              </MyButton>
-              <MyButton
-                className="btn"
-              >
-                 <Link to="Resume" style={{ textDecoration: "none" }}>
-                {" "}
-                <DescriptionOutlinedIcon />
-                Resume</Link>
-              </MyButton>
-              <MyButton
-                className="btn"
-              >
-                {" "}
-                <HomeRepairServiceOutlinedIcon />
-                Works
-              </MyButton>
-              <MyButton
-                className="btn"
-              >
-                <BookOutlinedIcon />
-                Blogs
-              </MyButton>
-              <MyButton
-                className="btn"
-              >
-                {" "}
-                <ContactPhoneOutlinedIcon />
-                Contact
-              </MyButton>
-            </div>
-            <div className="hamburger2">==</div>
-          </div>
-        </MTdiv>
+<Protfolio2/>
+
+
       </header>
       <div>
         <div style={{ height: "150px" }}>
