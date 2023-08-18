@@ -6,7 +6,7 @@ import { Protfolio } from "./phome";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { PWork } from "./pwork";
 import { Pblog } from "./pblog";
-import { PContact } from "../tsproject1/pcontact";
+import { PContact } from "./pcontact";
 
 export function Introduction() {
   return (
